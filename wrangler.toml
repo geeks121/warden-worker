@@ -62,7 +62,7 @@ run_worker_first = ["/api/*", "/identity/*", "/notifications/*"]
 # Defaults to 600000, and will be clamped to a minimum of 600000 even if set lower.
 # Existing users whose password iterations are less than this value will be upgraded on login.
 # PASSWORD_ITERATIONS = "600000"
-DISABLE_USER_REGISTRATION = "false"
+DISABLE_USER_REGISTRATION = "true"
 
 # Base delay in milliseconds before returning invalid credentials for a non-existent login user.
 # Defaults to 550, with a random ±30ms jitter; tune to the observed PBKDF2 duration.
@@ -83,9 +83,9 @@ DISABLE_USER_REGISTRATION = "false"
 # SYNC_RESPONSE_PREALLOC_BYTES = "1048576"
 
 # Push Notification Configuration (optional)
-# PUSH_ENABLED = "false"
-# PUSH_RELAY_URI = "https://push.bitwarden.com"
-# PUSH_IDENTITY_URI = "https://identity.bitwarden.com"
+PUSH_ENABLED = "true"
+PUSH_RELAY_URI = "https://push.bitwarden.com"
+PUSH_IDENTITY_URI = "https://identity.bitwarden.com"
 
 # Number of days to keep soft-deleted items before auto-purging.
 # Defaults to 30 days if not set. Set to 0 to disable auto-purge.
