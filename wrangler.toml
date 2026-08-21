@@ -111,8 +111,8 @@ crons = ["0 3 * * *"]
 
 [[d1_databases]]
 binding = "vault1"
-database_name = "warden-db"
-database_id = "3d982b56-ba97-4185-bd1b-ab2f480ad408"
+database_name = "vault1"
+database_id = "b5f9e388-d164-4cbd-be09-958684809959"
 migrations_dir = "migrations"
 
 # R2 bucket for file attachments (optional, requires credit card)
